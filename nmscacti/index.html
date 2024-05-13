@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMS MONITORING CACTI ON AMAZON</title>
+    <link rel="stylesheet" href="../nmscacti/stylesnms.css"> <!-- Sambungkan file CSS -->
+</head>
+<body>
+
+<!-- <script src="../javascript.js" defer></script> -->
+
+    <div class="container">
+        <div class="judul">
+            <h1>NMS MONITORING CACTI ON AMAZON</h1>
+        </div>
+
+        <div class="tanggal">
+            <p><em>Tanggal: 8 Mei 2024</em></p>
+        </div>
+
+        <div class="content">
+            <img src="../image/Cacti on Amazon/Thumnail NMS CACTI.png" alt="Thumnail">
+        </div>
+
+        <div class="deskripsi">
+            <p style="text-indent: 30px;">Network Monitoring System (NMS) merupakan sebuah sistem manajemen jaringan yang melibatkan 
+                penggunaan perangkat lunak dan perangkat keras. Perangkat lunak digunakan sebagai sistem 
+                yang mengelola proses pemantauan terhadap fungsi dan kinerja jaringan yang meliputi lalu 
+                lintas saluran data (bandwidth), pada sistem yang lebih kompleks, proses monitoring ini 
+                dapat dikembangkan sampai kepada penggunaan sumber daya, seperti sistem up/down, utilisasi 
+                CPU dan memory, serta manajemen port.</p>
+
+            <p style="text-indent: 30px;">Fungsi dari NMS yang sebenarnya adalah melakukan pemantauan terhadap kualitas SLA (Service 
+                Level Agreement) dari Bandwidth yang digunakan. Hasil dari pantauan tersebut biasanya 
+                dijadikan bahan dalam pengambilan keputusan oleh pihak manajemen, disisi lain digunakan 
+                oleh administrator jaringan (Network Engineer) untuk menganalisa apakah terdapat kejanggalan 
+                dalam operasional jaringan.</p>
+            
+            <div class="thumnail">
+                <img src="../image/Cacti on Amazon/TepologiNMS.jpg" alt="Topologi">
+            </div>
+
+            <p style="text-indent: 30px;">Pada project kali ini sayamenginstalasi sebuah NMS monitoring 
+                tools Cacti menggunakan infrastruktur cloud Amazon Web Services (AWS). Dari topologi di atas 
+                saya membuat sebuah VPC dan di dilamnya terdapat beberapa instance. Selain itu juga saya 
+                membuat dua subnet yaitu public subnet dan private subnet.</p>
+
+                <p>Nah mungkin ada yang bertanya <p1>“Mengapa di bikin dua subnet?”</p1></p>
+                
+            <p style="text-indent: 30px;">Karena saya membuat sebuah instance database untuk penyimpanan MySQL semua web server. kalau 
+                semisal saya menyimpan database di public itu merupakan hal yang sangat fatal karena dapat 
+                diakses oleh siapapun dan rentan kebocoran data. Untuk mengantisipasi kebocoran data saya 
+                pisahkan database dan webserver. Selain itu saya juga menambahkan keamanan tambahan yaitu BastionHost. BastionHost bertindak 
+                sebagai gerbang masuknya seseorang yang ingin meremote instance yang ada di dalam VPC 
+                (titik masuk dari eksternal). jadi ketika ada yang mau meremote instance dari luar dia harus 
+                masuk dulu ke BastionHost dan harus memiliki private key.</p>
+            
+            <p style="text-indent: 30px;">Dalam project ini saya memonitoring beberapa instance yang ada di dalam VPC. Adapun beberapa 
+                hal yang saya monitoring diantaranya dari segi memory, uptime, CPU, Load Avarage, dll.</p>
+        </div>
+        
+        <div class="lampiran">
+            <img src="../image/Cacti on Amazon/Capture1.PNG">
+            <img src="../image/Cacti on Amazon/Capture2.PNG">
+            <img src="../image/Cacti on Amazon/Capture3.PNG">
+            <img src="../image/Cacti on Amazon/Capture4.PNG">
+        </div>
+    </div>
+</body>
+</html>

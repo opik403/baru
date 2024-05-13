@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTING SKEMA FIBER OPTIC</title>
+    <link rel="stylesheet" href="../routingskemafo/styles.css"> <!-- Sambungkan file CSS -->
+</head>
+<body>
+
+<!-- <script src="../javascript.js" defer></script> -->
+
+    <div class="container">
+        <div class="judul">
+            <h1>ROUTING SKEMA FIBER OPTIC</h1>
+        </div>
+
+        <div class="tanggal">
+            <p><em>Tanggal: 10 Mei 2024</em></p>
+        </div>
+
+        <div class="thumnail">
+            <img src="../image/FO_Skema_Routing/thumnail_projectfoskemarouting.jpeg" alt="Thumnail">
+        </div>
+
+        <div class="deskripsi">
+            <p style="text-indent: 30px;">Hai, pada project kali ini saya bersama dengan kelompok saya membuat 
+                sebuah Routing Skema FO. Routing Skema FO ini sama saja seperti kita routing menggunakan kabel 
+                UTP, namun pada project ini kita menggunakan kabel FO dalam melakukan routing. Dalam hal ini 
+                kita diminta untuk membuat sebuah jaringan local agar gedung pajajaran dan siliwangi bisa 
+                saling terhubung. Dengan menggunakan kabel FO untuk routing, kita dapat mencapai kecepatan 
+                peneransferan data yang tinggi. Tenetu Kabel FO memiliki kapasitas transmisi yang jauh lebih 
+                besar daripada kabel UTP dan dapat menstabil koneksi.</p>
+
+            <p style="text-indent: 30px;">Dalam project ini, kita akan merancang dan mengimplementasikan 
+                jaringan lokal yang terdiri dari router dan switch untuk mengatur lalu lintas data antara 
+                gedung Pajajaran dan Siliwangi. Router akan berfungsi sebagai otak dari seluruh jaringan, 
+                mengatur lalu lintas data, dan megataur traffic yang lewat. Sementara switch akan digunakan 
+                untuk menghubungkan berbagai perangkat dalam jaringan lokal di masing-masing gedung. Selain 
+                itu kita juga melakukan pengaturan alamat IP, tabel routing, dan kebijakan keamanan yang 
+                diperlukan. Kemudian kita juga membuat sebuah server untuk keperluan client dan monitoring 
+                prangkat. Server-server tersebut kita install di dalam Mesin Virtual VM Ware. Adapun beberapa 
+                server yang kita install yaitu DNS, HTTP, NMS, dan VoIP. </p>
+            
+            <div class="content">
+                <img src="../image/FO_Skema_Routing/Topologi FO Skema Routing.jpg" alt="">
+            </div>
+
+            <div class="keterangan">
+                <p>Sedikit menjelaskan mengapa server-server tersebut kita install:</p>
+                <ol>
+                    <li><strong>Server DNS</strong>
+                        <br>Kita menginstall server DNS ini untuk keperluan pembuatan domain pada setiap server. 
+                        jadi nanti kita membuat sebuah domain di dalam server DNS untuk server HTTP/Web Server, 
+                        NMS, dan VoIP secara gratis. Tujuan dari pembuatan server DNS ini yaitu memudahkan client 
+                        ktika ingin search/mencari Web Server yang  sudah kita buat. Jadi tidak perlu search 
+                        menggunkan IP, cukup menggunakan nama domain Web Server yang kita buat di server DNS. 
+                    </li>
+
+                    <div class="dokumentasi">
+                        <img src="../image/FO_Skema_Routing/dns_forward.png" alt="Forward">
+                        <img src="../image/FO_Skema_Routing/dns_reverse.png" alt="Reverse">
+                    </div>
+                    
+                    <li><strong>Server HTTP/Web Server</strong>
+                        <br>Tujuan dari pembuatan Web Server ini yaitu agar client dapat mengakses web yang 
+                        kita buat. Dengan adanya web server, kita dapat menyediakan konten, layanan, atau 
+                        produk kepada pengguna. Pengguna dapat mengakses situs web yang kita kelola dengan 
+                        memasukkan alamat URL di browser, dan web server akan merespons dengan halaman web 
+                        yang diminta.
+                    </li>
+
+                    <div class="dokumentasi">
+                        <img src="../image/FO_Skema_Routing/webserver_1.png" alt="web1">
+                        <img src="../image/FO_Skema_Routing/webserver_2.png" alt="web2">
+                    </div>
+                    
+                    <li><strong>Server NMS (Network Management System)</strong>
+                        <br>Dalam hal ini, penginstalan NMS sangtlah penting agar seluruh jaringan local yang 
+                        kita kelola dapat di monitoring mulai dari prangkat, server, web, dll. Dengan adanya 
+                        NMS monitoring ini kita dapat mendeteksi suatu masalah, mengidentifikasi titik lemah 
+                        dalam jaringan, dan mengmbil tindakan yang akan dilakukan. Hal ini membantu 
+                        meningkatkan efisiensi operasional, mengurangi downtime, dan meningkatkan pengalaman 
+                        pengguna dalam menggunakan layanan yang disediakan oleh jaringan yang kita buat.
+                    </li>
+
+                    <div class="dokumentasi">
+                        <img src="../image/FO_Skema_Routing/monitoring.png">
+                        <img src="../image/FO_Skema_Routing/traffic_serverdns.png">
+                        <img src="../image/FO_Skema_Routing/traffic_voip.png">
+                        <img src="../image/FO_Skema_Routing/traffic_mikrotik_1.png">
+                    </div>
+                    
+                    <li><strong>VoIP (Voice over Internet Protocol)</strong>
+                        <br>Server VoIP kita dibuat untuk keperluan komunikasi dengan client. Semisal client 
+                        mengalami masalah, mereka dapat menghubungi administrator melalui jalur komunikasi 
+                        suara yang disediakan oleh sistem VoIP. Dengan server VoIP, komunikasi antara client 
+                        dan administrator dapat dilakukan secara langsung dan efisien.
+                    </li>
+
+                    <div class="dokumentasi-voip">
+                        <img src="../image/FO_Skema_Routing/konfig_voip.png">
+                        <img src="../image/FO_Skema_Routing/voip_phone_1.png">
+                        <img src="../image/FO_Skema_Routing/voip_phone_2.png">
+                    </div>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

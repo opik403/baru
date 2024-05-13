@@ -1,0 +1,247 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4a90e2, #00d423);   
+    animation: fadeIn 1s ease; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.judul {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.tanggal {
+    margin-left: 20px;
+    margin-top: -32px;
+    color: #a3a3a3;
+    text-align: left;
+}
+
+    .tanggal p {
+        align-self: flex-start;
+    }
+
+.thumnail {
+    text-align: center;
+    padding: 20px;
+}
+
+.content img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.deskripsi {
+    padding: 0 20px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.content img {
+    max-width: 90%;
+    margin: 10px 46px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.keterangan ol {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 20px;
+}
+
+.keterangan ol li {
+    counter-increment: my-counter;
+    margin-bottom: 20px; /* Atur jarak antara setiap item */
+    position: relative;
+}
+
+.keterangan ol li::before {
+    content: counter(my-counter) ". ";
+    font-weight: bold;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px; /* Geser nomor urut ke kiri */
+}
+
+.keterangan ol li strong {
+    display: inline-block; /* Membuat teks menjadi blok */
+    width: 600px; /* Atur lebar teks agar sejajar */
+    font-weight: bold; /* Atur kembali ke normal karena strong sudah ditebalkan sebelumnya */
+}
+
+.dokumentasi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dokumentasi img {
+    width: 45%;
+    margin-bottom: 60px;
+    margin-left: -1px;
+}
+
+.dokumentasi-voip {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dokumentasi-voip img {
+    width: 29%;
+    height: 160px;
+    margin-left: 20px;
+}
+
+@media (min-width: 350px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .judul h1 {
+        font-size: 25px;
+    }
+
+    .tanggal p {
+        font-size: 13px;
+    }
+
+    .thumnail img {
+        width: 100%;
+    }
+
+    .deskripsi p {
+        font-size: 14px;
+        margin-left: -15px;
+    }
+
+    .content img {
+        max-width: 113%;
+        margin: 10px -24px;
+    }
+
+    .keterangan ol {
+        list-style: none;
+        counter-reset: my-counter;
+        margin-left: -15px;
+    }
+    
+    .keterangan ol li strong {
+        width: 332px;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .keterangan ol li {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .dokumentasi img {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+    .dokumentasi-voip img {
+        width: 65%;
+        height: 171px;
+        margin-left: 40px;
+        margin-bottom: 14px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 480px;
+    }
+
+    .dokumentasi img {
+        width: 85%;
+        margin-left: 18px;
+    }
+
+    .dokumentasi-voip img {
+        width: 53%;
+        height: 200px;
+        margin-left: 87px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 655px;
+    }
+
+    .deskripsi p {
+        margin-left: 0px;
+    }
+
+    .content img {
+        max-width: 107%;
+    }
+
+    .keterangan ol {
+        list-style: none;
+        counter-reset: my-counter;
+        margin-left: 0px;
+    }
+
+    .dokumentasi img {
+        width: 40%;
+        padding: 8px 11px;
+    }
+
+    .dokumentasi-voip img {
+        width: 26%;
+        height: 150px;
+        margin-left: 26px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 830px;
+    }
+
+    .judul h1 {
+        font-size: 30px;
+    }
+
+    .tanggal p {
+        font-size: 15px;
+    }
+
+    .thumnail img {
+        width: 90%;
+    }
+
+    .keterangan ol li strong {
+        margin-bottom: 5px;
+    }
+
+    .deskripsi p {
+        font-size: 15px;
+    }
+    
+    .dokumentasi-voip img {
+        width: 24%;
+        height: 165px;
+        margin-left: 36px;
+    }
+}

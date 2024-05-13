@@ -1,0 +1,254 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4a90e2, #00d423);   
+    animation: fadeIn 1s ease; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.judul {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.tanggal {
+    margin-left: 20px;
+    margin-top: -32px;
+    color: #a3a3a3;
+    text-align: left;
+}
+
+    .tanggal p {
+        align-self: flex-start;
+    }
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.deskripsi {
+    padding: 0 20px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+    .deskripsi p1 {
+        font-style: italic;
+    }
+
+.thumnail {
+    padding: 0px 20px;
+}
+
+    .thumnail img {
+        max-width: 80%;
+        padding: 30px 67px;
+    }
+
+.lampiran {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lampiran img {
+    max-width: 50%;
+}
+
+@media (min-width: 350px) {
+    .container {
+        max-width: 320px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .judul h1 {
+        margin: 0px -14px;
+        text-align: left;
+        font-size: 24px;
+    }
+    
+    .tanggal p {
+        margin-left: -12px;
+        margin-top: 30px;
+        color: #a3a3a3;
+        text-align: left;
+        font-size: 14px;
+    }
+    
+    .content img {
+        max-width: 108%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: -11px;
+    }
+
+    .deskripsi {
+        text-align: left;
+        line-height: 1.4;
+        margin-left: -13px;
+        width: 310px;
+        font-size: 14px;
+    }
+
+    .thumnail img {
+        max-width: 122%;
+        padding: 30px 5px;
+        margin: 0px -36px;
+    }
+
+    .lampiran {
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
+    .lampiran img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .judul h1 {
+        margin: 0px -5px;
+        font-size: 25px;
+    }
+
+    .tanggal p {
+        margin-left: -5px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .content img {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+    .deskripsi {
+        margin-left: -5px;
+        font-size: 15px;
+        width: 445px;
+    }
+
+    .thumnail img {
+        max-width: 115%;
+        padding: 30px 5px;
+        margin: 0px -36px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 660px;
+    }
+
+    .judul h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .tanggal {
+        font-size: 14px;
+    }
+
+    .thumnail img {
+        max-width: 105%;
+    }
+
+    .content img {
+        max-width: 95%;
+        margin-top: 20px;
+    }
+
+    .deskripsi {
+        margin-left: -5px;
+        width: 630px;
+        margin-top: -40px;
+    }
+
+    .thumnail img {
+        max-width: 100%;
+        margin-left: -10px;
+    }
+
+    .lampiran {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .lampiran img {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 840px;
+    }
+
+    .judul h1 {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    .tanggal {
+        font-size: 16px;
+        margin-left: 45px;
+    }
+
+    .content img {
+        max-width: 70%;
+    }
+
+    .deskripsi {
+        font-size: 16px;
+        margin-left: 20px;
+        width: 750px;
+    }
+
+    .thumnail img {
+        max-width: 95%;
+        margin-left: 20px;
+    }
+
+    .lampiran {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .lampiran img {
+        max-width: 50%;
+    }
+}
